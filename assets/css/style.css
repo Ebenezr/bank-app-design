@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background-color: rgb(52, 52, 52);
+}
+.container {
+  width: 412px;
+  height: 915px;
+  background-color: rgb(255, 255, 255);
+}
