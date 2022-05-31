@@ -35,6 +35,16 @@ body {
   padding: 1rem 2rem;
 
 }
+.header::after{
+  content: "";
+  bottom:-3rem;
+  left: 0;
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+  z-index:  1;
+  background: #000;
+}
 /*account balance card*/
 .main-card {
   position: absolute;
@@ -48,24 +58,14 @@ body {
   bottom: 0;
   border-radius: 0.9rem;
   background-color: red;
-  /* z-index: 999; */
+  z-index: 999;
 
 }
+/*main content wrapper*/
 .content-wrapper{
-  background-color: grey;
+  background-color: #fff;
   height: 75%;
   border-radius: 3rem 0 0 0;
   position: relative;
-
-
-}
-.content-wrapper::before{
-  content: "";
-  top:0;
-  left: 0;
-  position: absolute;
-  height: 3rem;
-  width: 3rem;
-  z-index: -1;
-  background: red;
+  z-index: 11;
 }
