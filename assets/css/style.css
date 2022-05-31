@@ -49,12 +49,12 @@ body {
 .main-card {
   position: absolute;
   width: 80%;
-  height: 6rem;
+  height: 7rem;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: -3rem;
+  margin-bottom: -3.5rem;
   bottom: 0;
   border-radius: 0.9rem;
   background-color: red;
@@ -80,14 +80,14 @@ body {
 
 /* send money section*/
 .people{
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   height: 10rem;
   background: #fff;
 }
 .people-wrapper{
   margin-top: 1rem;
-  width: 95%;
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
@@ -133,7 +133,7 @@ body {
 /*quick payment section*/
 .payments-container{
   height: 20rem;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 /*payment cards container*/
@@ -149,9 +149,55 @@ body {
 .card{
   width: 30%;
   height: 12rem;
-  background: #262626;
+  background: #000;
   border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0.7rem:
+  color:#fff;
+
 }
+.icon-status{
+  background: #8d8d8d;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  margin-left: 0.4rem;
+}
+.icon-status i{
+  color: #fff;
+}
+.card-title{
+  text-align: center;
+  height: 40%;
+  padding: 0.4rem;
+  display: flex;
+  align-items: center;
+
+}
+.card-title h3{
+  color: #fff;
+  font-size: 1.25rem;
+
+}
+.card-info{
+  width: 100%;
+  padding: 0.4rem;
+  color: #fff;
+  height: 25%;
+
+}
+.card-info h4{
+  font-size: 0.8rem;
+}
+.card-info p{
+  font-weight: 100;
+  color: #8d8d8d;
+  margin-top: 0.3rem;
+  font-size: 0.6rem;
+}
+
 /*footer nav section*/
 footer{
   height: 5rem;
@@ -205,6 +251,7 @@ footer button:focus{
   transform: scale(1.1);
 }
 footer i{
-  color: #D3D3D3;
+  color: #8d8d8d;
   font-size: 2.3rem;
+  cursor: pointer;
 }
