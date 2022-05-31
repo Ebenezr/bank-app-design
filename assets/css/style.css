@@ -142,11 +142,24 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
+  overflow-x: auto;
   align-items: center;
+  -webkit-overflow-scrolling: touch;
   gap:1rem;
+
+}
+/*hide scroll bar in chrome*/
+.payment-wrapper::-webkit-scrollbar{
+  display: none;
+}
+/*hide scroll bar in firefox*/
+.payment-wrapper{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 /*payment cards*/
 .card{
+  flex: 0 0 auto;
   width: 30%;
   height: 12rem;
   background: #000;
