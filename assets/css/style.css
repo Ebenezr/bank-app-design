@@ -7,13 +7,13 @@ body {
   font-family: sans-serif;
   background-color: rgb(50, 50, 50);
 }
-h4{
+h4 {
   font-weight: 100;
 }
 /*main body wrapper*/
 .container {
-  min-width: 400px;
-  height: 100vh;
+  max-width: 400px;
+  height: 926px;
   background-color: rgb(255, 255, 255);
   margin: 0 auto;
   z-index: 1;
@@ -29,23 +29,23 @@ h4{
   border-radius: 0 0 2rem 0;
 }
 /*account balance section*/
-.header .account{
+.header .account {
   color: white;
   padding: 0.2rem;
   position: absolute;
-  top:50%;
+  top: 50%;
   width: 90%;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
 }
-.account h3{
+.account h3 {
   font-weight: 100;
   font-size: 1rem;
 }
 /*top navigation*/
-.header nav{
+.header nav {
   width: 100%;
   height: 20%;
   color: #fff;
@@ -53,16 +53,15 @@ h4{
   justify-content: space-between;
   padding: 2rem 2rem;
   font-size: 1.5rem;
-
 }
-.header::after{
+.header::after {
   content: "";
-  bottom:-3rem;
+  bottom: -3rem;
   left: 0;
   position: absolute;
   height: 3rem;
   width: 3rem;
-  z-index:  1;
+  z-index: 1;
   background: #000;
 }
 /*account balance card*/
@@ -86,9 +85,8 @@ h4{
   text-align: center;
 }
 
-
 /*main content wrapper*/
-.content-wrapper{
+.content-wrapper {
   background-color: #fff;
   height: 75%;
   width: 100%;
@@ -100,18 +98,18 @@ h4{
   justify-content: flex-end;
 }
 /*sections title*/
-.content-wrapper h3{
+.content-wrapper h3 {
   font-weight: 100;
   color: grey;
 }
 /* send money section*/
-.people{
+.people {
   width: 90%;
   margin: 0 auto;
   height: 10rem;
   background: #fff;
 }
-.people-wrapper{
+.people-wrapper {
   margin-top: 1rem;
   width: 100%;
   padding: 0.5rem;
@@ -120,19 +118,19 @@ h4{
   overflow-x: auto;
   align-items: center;
   -webkit-overflow-scrolling: touch;
-  gap:1rem;
+  gap: 1rem;
 }
 /*hide scroll bar in chrome*/
-.people-wrapper::-webkit-scrollbar{
-    display: none;
+.people-wrapper::-webkit-scrollbar {
+  display: none;
 }
 /*hide scroll bar in firefox*/
-.people-wrapper{
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+.people-wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 /*person profile card*/
-.person{
+.person {
   flex: 0 0 auto;
   width: 5rem;
   height: 5rem;
@@ -142,12 +140,12 @@ h4{
 }
 
 /*scale card on focus*/
-.person:focus, .person:hover{
+.person:focus,
+.person:hover {
   transform: scale(1.07);
-
 }
 /*profile images*/
-.person img{
+.person img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -155,7 +153,7 @@ h4{
   object-position: center center;
 }
 /* search person card  */
-.search{
+.search {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,13 +162,13 @@ h4{
   font-weight: 100;
 }
 /*quick payment section*/
-.payments-container{
+.payments-container {
   height: 20rem;
   width: 90%;
   margin: 0 auto;
 }
 /*payment cards container*/
-.payment-wrapper{
+.payment-wrapper {
   margin-top: 1rem;
   padding: 1rem 0.5rem;
   width: 100%;
@@ -179,20 +177,19 @@ h4{
   overflow-x: auto;
   align-items: center;
   -webkit-overflow-scrolling: touch;
-  gap:1rem;
-
+  gap: 1rem;
 }
 /*hide scroll bar in chrome*/
-.payment-wrapper::-webkit-scrollbar{
+.payment-wrapper::-webkit-scrollbar {
   display: none;
 }
 /*hide scroll bar in firefox*/
-.payment-wrapper{
+.payment-wrapper {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 /*payment cards*/
-.card{
+.card {
   flex: 0 0 auto;
   width: 30%;
   height: 12rem;
@@ -203,46 +200,42 @@ h4{
   justify-content: flex-end;
   text-align: center;
   align-items: center;
-  color:#fff;
+  color: #fff;
   transition: transform 50ms ease;
   position: relative;
-  overflow-Y: hidden;
+  overflow-y: hidden;
   cursor: pointer;
-
 }
 /*scale card on focus*/
-.card:focus, .card:hover{
-    transform: scale(1.05);
-
+.card:focus,
+.card:hover {
+  transform: scale(1.05);
 }
-.icon-status{
+.icon-status {
   background: #000;
   width: 3rem;
   height: 3rem;
   border-radius: 0.5rem;
   display: grid;
-  place-items:center;
-
+  place-items: center;
 }
-.icon-status i{
+.icon-status i {
   color: #fff;
   font-size: 2.5rem;
 }
-.card-title{
+.card-title {
   text-align: center;
   width: 100%;
   height: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-.card-title h3{
+.card-title h3 {
   color: #fff;
   font-size: 1.25rem;
-
 }
-.card-info{
+.card-info {
   width: 100%;
   padding: 0.4rem;
   color: #fff;
@@ -250,42 +243,43 @@ h4{
   position: absolute;
   background: linear-gradient(
     hsl(0 0% 0%/0),
-    hsl(20 0% 0%/0.3)20%,
+    hsl(20 0% 0%/0.9) 20%,
     hsl(0 0% 0%/1)
-);
+  );
   border-radius: 0.1rem 0.1rem 0 0;
   transform: translateY(100%);
   transition: transform 500ms ease;
   transition-delay: 50ms;
-
 }
-.card:focus-within, .card:hover .card-info{
+.card:focus-within,
+.card:hover .card-info {
   transform: translateY(0);
   transition-delay: 100ms;
 }
-.card:focus-within, .card:hover .icon-status{
+.card:focus-within,
+.card:hover .icon-status {
   transform: translateY(-70%);
   transition: transform 500ms ease;
   transition-delay: 50ms;
 }
-.card-info h4{
+.card-info h4 {
   font-size: 1rem;
 }
-.card-info p{
+.card-info p {
   font-weight: 100;
   color: #fff;
   margin-top: 0.5rem;
   font-size: 0.6rem;
 }
 /*footer nav section*/
-footer{
+footer {
   height: 5rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.footer-nav{
+.footer-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -296,7 +290,7 @@ footer{
   width: 100%;
   margin: 0 auto;
 }
-footer button{
+footer button {
   background: transparent;
   border: none;
   position: relative;
@@ -304,7 +298,7 @@ footer button{
   justify-content: center;
 }
 /*active status on nac buttons*/
-footer button::after{
+footer button::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -313,22 +307,19 @@ footer button::after{
   width: 0.9rem;
   border-radius: 50% 50% 0 0;
   opacity: 0;
-
 }
 footer button:hover i,
-footer button:focus i{
+footer button:focus i {
   color: #fff;
-
 }
-footer button:focus::after{
+footer button:focus::after {
   content: "";
   opacity: 1;
-
 }
-footer button:focus{
+footer button:focus {
   transform: scale(1.1);
 }
-footer i{
+footer i {
   color: #8d8d8d;
   font-size: 2.3rem;
   cursor: pointer;
