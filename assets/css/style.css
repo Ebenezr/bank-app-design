@@ -9,8 +9,8 @@ body {
 }
 /*main body wrapper*/
 .container {
-  width: 412px;
-  height: 915px;
+  min-width: 400px;
+  height: 100vh;
   background-color: rgb(255, 255, 255);
   margin: 0 auto;
   z-index: 1;
@@ -164,9 +164,13 @@ body {
   height: 3rem;
   border-radius: 0.5rem;
   margin-left: 0.4rem;
+  display: grid;
+  place-items:center;
+
 }
 .icon-status i{
   color: #fff;
+  font-size: 2rem;
 }
 .card-title{
   text-align: center;
@@ -194,7 +198,7 @@ body {
 .card-info p{
   font-weight: 100;
   color: #8d8d8d;
-  margin-top: 0.3rem;
+  margin-top: 0.1rem;
   font-size: 0.6rem;
 }
 
