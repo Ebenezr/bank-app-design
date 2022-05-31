@@ -91,6 +91,7 @@ h4{
 .content-wrapper{
   background-color: #fff;
   height: 75%;
+  width: 100%;
   border-radius: 2rem 0 0 0;
   position: relative;
   z-index: 11;
@@ -103,7 +104,6 @@ h4{
   font-weight: 100;
   color: grey;
 }
-
 /* send money section*/
 .people{
   width: 90%;
@@ -146,8 +146,6 @@ h4{
   transform: scale(1.07);
 
 }
-
-
 /*profile images*/
 .person img{
   width: 100%;
@@ -217,7 +215,6 @@ h4{
     transform: scale(1.05);
 
 }
-
 .icon-status{
   background: #000;
   width: 3rem;
@@ -245,16 +242,18 @@ h4{
   font-size: 1.25rem;
 
 }
-
 .card-info{
   width: 100%;
   padding: 0.4rem;
   color: #fff;
   height: 55%;
   position: absolute;
-  background-color: grey;
-
-  border-radius: 1rem 1rem 0 0;
+  background: linear-gradient(
+    hsl(0 0% 0%/0),
+    hsl(20 0% 0%/0.3)20%,
+    hsl(0 0% 0%/1)
+);
+  border-radius: 0.1rem 0.1rem 0 0;
   transform: translateY(100%);
   transition: transform 500ms ease;
   transition-delay: 50ms;
@@ -265,13 +264,10 @@ h4{
   transition-delay: 100ms;
 }
 .card:focus-within, .card:hover .icon-status{
-  transform: translateY(-60%);
+  transform: translateY(-70%);
   transition: transform 500ms ease;
   transition-delay: 50ms;
-  }
-
-
-
+}
 .card-info h4{
   font-size: 1rem;
 }
@@ -281,7 +277,6 @@ h4{
   margin-top: 0.5rem;
   font-size: 0.6rem;
 }
-
 /*footer nav section*/
 footer{
   height: 5rem;
@@ -289,7 +284,6 @@ footer{
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 .footer-nav{
   display: flex;
