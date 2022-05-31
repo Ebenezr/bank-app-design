@@ -245,33 +245,33 @@ h4{
   font-size: 1.25rem;
 
 }
-@media (hover){
-  .card-info{
-    width: 100%;
-    padding: 0.4rem;
-    color: #fff;
-    height: 55%;
-    position: absolute;
-    background-color: grey;
 
-    border-radius: 1rem 1rem 0 0;
-    transform: translateY(100%);
-    transition: transform 500ms ease;
-    transition-delay: 50ms;
+.card-info{
+  width: 100%;
+  padding: 0.4rem;
+  color: #fff;
+  height: 55%;
+  position: absolute;
+  background-color: grey;
 
-  }
-  .card:focus-within, .card:hover .card-info{
-    transform: translateY(0);
-    transition-delay: 100ms;
-  }
-  .card:focus-within, .card:hover .icon-status{
-    transform: translateY(-60%);
-    transition: transform 500ms ease;
-    transition-delay: 50ms;
-  }
-
+  border-radius: 1rem 1rem 0 0;
+  transform: translateY(100%);
+  transition: transform 500ms ease;
+  transition-delay: 50ms;
 
 }
+.card:focus-within, .card:hover .card-info{
+  transform: translateY(0);
+  transition-delay: 100ms;
+}
+.card:focus-within, .card:hover .icon-status{
+  transform: translateY(-60%);
+  transition: transform 500ms ease;
+  transition-delay: 50ms;
+  }
+
+
+
 .card-info h4{
   font-size: 1rem;
 }
