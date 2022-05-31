@@ -164,13 +164,47 @@ footer{
 .footer-nav{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0.5rem 0.8rem;
+  background: #000;
+  border-radius: 1rem;
+  height: 4.5rem;
+  width: 95%;
+  margin: 0 auto;
 }
 footer button{
   background: transparent;
   border: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+/*active status on nac buttons*/
+footer button::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background: #fff;
+  height: 0.3rem;
+  width: 0.9rem;
+  border-radius: 50% 50% 0 0;
+  opacity: 0;
+
+}
+footer button:hover i,
+footer button:focus i{
+  color: #fff;
+
+}
+footer button:focus::after{
+  content: "";
+  opacity: 1;
+
+}
+footer button:focus{
+  transform: scale(1.1);
 }
 footer i{
-  color: black;
+  color: #D3D3D3;
   font-size: 2.3rem;
 }
