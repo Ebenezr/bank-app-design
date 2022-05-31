@@ -113,6 +113,14 @@ body {
   border-radius: 50%;
 
 }
+/*profile images*/
+.person img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: center center;
+}
 /* search person card  */
 .search{
   display: flex;
